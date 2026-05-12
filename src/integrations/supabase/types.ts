@@ -126,12 +126,16 @@ export type Database = {
           amount: number
           created_at: string
           currency: string
+          discount: number
+          due_date: string | null
           id: string
           issued_by: string | null
           issued_to: string | null
           items: Json
           notes: string | null
+          payment_method: string | null
           shipment_id: string
+          tax_rate: number
           ticket_number: string
           ticket_type: string
           title: string
@@ -141,12 +145,16 @@ export type Database = {
           amount?: number
           created_at?: string
           currency?: string
+          discount?: number
+          due_date?: string | null
           id?: string
           issued_by?: string | null
           issued_to?: string | null
           items?: Json
           notes?: string | null
+          payment_method?: string | null
           shipment_id: string
+          tax_rate?: number
           ticket_number: string
           ticket_type?: string
           title?: string
@@ -156,12 +164,16 @@ export type Database = {
           amount?: number
           created_at?: string
           currency?: string
+          discount?: number
+          due_date?: string | null
           id?: string
           issued_by?: string | null
           issued_to?: string | null
           items?: Json
           notes?: string | null
+          payment_method?: string | null
           shipment_id?: string
+          tax_rate?: number
           ticket_number?: string
           ticket_type?: string
           title?: string
